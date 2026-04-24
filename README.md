@@ -44,10 +44,14 @@ Fluxo completo:
 
 # Teste de carga
 ## Configuração:
-Threads: 300
-Ramp-up: 10s
-Duration: 120s
-Loop: Infinite
+Threads: 300  
+
+Ramp-up: 10s  
+
+Duration: 120s  
+
+Loop: Infinite  
+
 ## Resultado principal:
 Throughput total: 193.5 req/s
 P90 total: 1270 ms
