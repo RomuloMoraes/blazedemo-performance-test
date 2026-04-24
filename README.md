@@ -53,37 +53,57 @@ Duration: 120s
 Loop: Infinite  
 
 ## Resultado principal:
-Throughput total: 193.5 req/s
-P90 total: 1270 ms
-Error %: 0.04%
+Throughput total: 193.5 req/s  
+
+P90 total: 1270 ms  
+
+Error %: 0.04%  
+
 O teste de carga não atende completamente ao critério de aceitação.
+
 ## Resultado esperado:
-250 req/s
-P90 < 2000 ms
+250 req/s  
+
+P90 < 2000 ms  
+
 ## Resultado obtido:
-193.5 req/s -> FAIL
-P90 = 1270 ms -> PASS
-Erros = 0.04% -> PASS
+193.5 req/s -> FAIL  
+
+P90 = 1270 ms -> PASS  
+
+Erros = 0.04% -> PASS  
 
 O sistema apresentou comportamento estável sob carga moderada, com tempo de resposta dentro do limite e taxa de erro praticamente nula.
 
 # Teste de pico
 ## Configuração:
-Threads: 600
-Ramp-up: 2s
-Duration: 60s
-Loop: Infinite
+Threads: 600  
+
+Ramp-up: 2s  
+
+Duration: 60s  
+
+Loop: Infinite  
+
 ## Resultado principal:
-Throughput total: 163.4 req/s
-P90 total: 4999 ms
-Error %: 0.00%
+Throughput total: 163.4 req/s  
+
+P90 total: 4999 ms  
+
+Error %: 0.00%  
+
 O teste de pico não atende ao critério de aceitação.
+
 ## Resultado esperado:
-250 req/s
-P90 < 2000 ms
+250 req/s  
+
+P90 < 2000 ms  
+
 ## Resultado obtido:
-163.4 req/s -> FAIL
-P90 = 4999 ms -> FAIL
+163.4 req/s -> FAIL  
+
+P90 = 4999 ms -> FAIL  
+
 Erros = 0% -> PASS
 
 Mesmo com aumento brusco para 600 usuários em 2 segundos, o sistema não conseguiu aumentar a vazão. Pelo contrário, o throughput ficou menor que no teste de carga anterior.
